@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Häufigkeitsverteilung
+    </title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+
+    <h1>Häufigkeitsverteilung</h1>
+
+    <% if (data) { %>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Buchstabe</th>
+                    <th>Absolute Häufigkeit</th>
+                    <th>Relative Häufigkeit</th>
+                    <th>Informationsgehalt</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% data.forEach(item=> { %>
+                    <tr>
+                        <td>
+                            <%= item.letter %>
+                        </td>
+                        <td>
+                            <%= item.absoluteFrequency %>
+                        </td>
+                        <td>
+                            <%= item.relativeFrequency %>
+                        </td>
+                        <td>
+                            <%= item.infoContent %>
+                        </td>
+                    </tr>
+                    <% }); %>
+            </tbody>
+        </table><br>
+        <% } %>
+            <a href="/">Zurück zur Startseite</a>
+</body>
+
+</html>

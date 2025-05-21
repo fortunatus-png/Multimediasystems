@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar-Cipher Ergebnis</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <h1>Caesar-Cipher Ergebnis</h1>
+
+    <% if (result.action==="encrypt" ){ %>
+        <p><strong>Verschlüsselter Text:</strong>
+            <%= result.processedText %>
+        </p>
+        <% } else if (result.action==="decrypt" ) { %>
+            <p><strong>Entschlüsselter Text:</strong>
+                <%= result.processedText %>
+            </p>
+            <% }else if(result.action==="bruteforce" ) { %>
+                <p><strong>Entschlüsselter Text (Brute Force):</strong>
+                    <%= result.processedText %>
+                </p>
+                <p><strong>Geschätzter Schlüssel:</strong>
+                    <%= result.shift %>
+                </p>
+                <% } %>
+                    <a href="/">Zurück zur Startseite</a>
+</body>
+
+</html>

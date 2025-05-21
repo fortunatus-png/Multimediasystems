@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCT-Ergebnis</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <h1>DCT-Ergebnis</h1>
+
+    <table border="1">
+        <tbody>
+            <% dctMatrix.forEach(row=> { %>
+                <tr>
+                    <% row.forEach(value=> { %>
+                        <td>
+                            <%= Math.round(value) %>
+                        </td>
+                        <% }); %>
+                </tr>
+                <% }); %>
+        </tbody>
+    </table>
+    <br><a href="/">Zurück zur Startseite</a>
+</body>
+
+</html>

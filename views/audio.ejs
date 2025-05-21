@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio und Animation</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <h1>Audio und Animation</h1>
+
+    <!-- Audio-Element mit Steuerelementen -->
+    <audio id="audio-player" src="/audios/audio.mp3"></audio>
+
+    <div class="controls">
+        <!-- Button zum Starten oder Fortsetzen des Audios -->
+        <button id="play-button">Abspielen</button>
+        <button id="pause-button">Pause</button>
+
+        <!-- Panning-Regler -->
+        <label for="panning-control">Panning:</label>
+        <input id="panning-control" type="range" min="-1" max="1" step="0.01" value="0">
+    </div>
+
+    <!-- Canvas für die Animation -->
+    <canvas id="canvas" width="800" height="400"></canvas>
+
+    <!-- JavaScript -->
+    <script src="/javascripts/audioScript.js"></script>
+
+    <a href="/">Zurück zur Startseite</a>
+</body>
+
+</html>

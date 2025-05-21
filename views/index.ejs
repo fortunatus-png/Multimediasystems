@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <h1>
+        Multimediasysteme
+    </h1>
+    <!-- Übung: Text -->
+    <div class="container">
+        <h2>Übung: Text</h2>
+        <form action="/info" method="POST">
+            <div class="row">
+                <div class="col-20">
+                    <label for="letters">Text</label>
+                </div>
+                <div class="col-80">
+                    <textarea id="letters" name="letters" rows="5" cols="50"
+                        placeholder="Schreiben Sie etwas.."></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-40">
+                    <button name="action" value="info" type="submit">Häfigkeitsverteilung berechnen</button>
+                </div>
+                <div class="col-40">
+                    <button name="action" value="bruteforce" type="submit">Brute-Force Entschlüsseln</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-40">
+                    <label for="shift">Schlüssel</label>
+                    <input type="number" id="shift" name="shift" value="0" size="2">
+                </div>
+                <div class="col-40">
+                    <button name="action" value="encrypt" type="submit">Verschlüsseln</button>
+                    <button name="action" value="decrypt" type="submit">Entschlüsseln</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Übung: Bild -->
+    <div class="container">
+        <h2>Übung: Bild</h2>
+        <form action="/dct" method="post">
+            <div class="row">
+                <div class="col-20">
+                    <label for="dct">Matrix(8x8, Werte durch Leerzeichen getrennt, Zeilen durch Kommas):</label>
+                </div>
+                <div class="col-80">
+                    <textarea name="dct" id="dct" rows="5" cols="50" placeholder="1 2 3 4 5 6 7 8, ..."></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Canvas -->
+                <div class="col-40">
+                    <button type="submit">DCT berechnen</button>
+                    <a href="/images">Bilder anzeigen</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Übung: Audio -->
+    <div class="container">
+        <h2>Übung: Audio</h2>
+        <form action="/audio" method="get">
+            <button type="submit">Audio und Animation</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
