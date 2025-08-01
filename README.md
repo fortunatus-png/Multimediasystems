@@ -39,7 +39,6 @@ Die Anwendung basiert auf **Node.js** und **Express** und wurde schrittweise um 
 
 #### `/audio`
 - Laden und Abspielen einer Audiodatei (MP3)
-- Start der Wiedergabe über Button
 
 ---
 
@@ -48,6 +47,3 @@ Die Anwendung basiert auf **Node.js** und **Express** und wurde schrittweise um 
 ```bash
 npm install
 npm start
-
----
-Dann im Browser öffnen: http://localhost:3000
