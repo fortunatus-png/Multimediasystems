@@ -193,19 +193,7 @@ This project demonstrates proficiency in:
 
 This project is part of academic coursework. For usage rights and licensing information, please contact the repository owner.
 
----
 
-## 👤 Author
-
-**Tumar Chegebaeva**
-- GitHub: [@fortunatus-png](https://github.com/fortunatus-png)
-- Repository: [Multimediasystems](https://github.com/fortunatus-png/Multimediasystems)
-
----
-
-## 🤝 Contributing
-
-This is an educational project. If you'd like to suggest improvements or have feedback, feel free to open an issue or contact the author.
 
 ---
 
